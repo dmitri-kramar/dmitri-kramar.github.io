@@ -1,0 +1,9 @@
+HELP.md
+scripts/script-old.js
+scripts/index.ts
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr

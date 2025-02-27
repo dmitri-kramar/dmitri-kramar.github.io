@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dmitri Kramar — Junior Java Developer</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="fixed-width">
+                <p>Dmitri Kramar</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </nav>
+            <div class="fixed-width">
+                <a href="#contacts" class="button">Contacts</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="introduction">
+            <div class="container">
+                <div id="description">
+                    <p>Hi there, I'm</p>
+                    <h1>Dmitri <span class="highlight">Kramar</span></h1>
+                    <p>
+                        Being an aspiring Junior Java Developer, I focus on writing clean, maintainable code while
+                        keeping up with the latest updates to the language. My previous experience in the media field
+                        has helped me develop a keen eye for detail and a strong sense of responsibility.
+                    </p>
+                    <p>
+                        My main goal is to secure a Junior Java Developer position, but I am also open to
+                        internship opportunities.
+                    </p>
+                    <div id="buttons-bar">
+                        <a href="https://github.com/dmitri-kramar" class="button" target="_blank">GitHub</a>
+                        <a href="https://www.linkedin.com/in/dmitri-kramar/" class="button" target="_blank">LinkedIn</a>
+                    </div>
+                </div>
+                <img src="images/photo.png" alt="Dmitri Kramar">
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="container">
+                <div class="services-cell">
+                    <h3>BACKEND</h3>
+                    <p>
+                        I prefer backend development with <span>Java</span>, <span>Hibernate</span>,
+                        and <span>Spring</span>. I also have experience working with <span>MySQL</span> databases.
+                    </p>
+                </div>
+                <div class="services-cell">
+                    <h3>FRONTEND</h3>
+                    <p>
+                        I have basic knowledge of <span>HTML</span>, <span>CSS</span>, <span>JavaScript</span>,
+                        and <span>Angular</span> but enjoy working with <span>JavaFX</span> the most.
+                    </p>
+                </div>
+                <div class="services-cell">
+                    <h3>TESTING</h3>
+                    <p>
+                        I use <span>JUnit</span> and <span>Mockito</span> frameworks to write reliable unit tests,
+                        ensuring code quality and stability.
+                    </p>
+                </div>
+                <div class="services-cell">
+                    <h3>TEAMWORK</h3>
+                    <p>
+                        I’m experienced with <span>GIT</span> and <span>Agile</span>, enabling effective teamwork
+                        and flexible project management.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h3>Here are some projects I have worked on:</h3>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="project-content">
+                                <div class="project-image">
+                                    <img src="images/rest_api.jpg" alt="Video Game Library REST API">
+                                </div>
+                                <div class="project-info">
+                                    <h3>Video Game Library REST API</h3>
+                                    <p>A RESTful API for managing a video game library, allowing authenticated users
+                                        to interact with games, developers, genres, platforms, and user profiles.</p>
+                                    <ul>
+                                        <li>Java 17, Spring Boot, Spring Security, Hibernate, SQL</li>
+                                        <li>Basic authentication using BCryptPasswordEncoder</li>
+                                        <li>Data validation using @Valid and custom DTOs</li>
+                                    </ul>
+                                    <a href="https://github.com/dmitri-kramar/game-library-api" class="button" target="_blank">View on GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="project-content">
+                                <div class="project-image">
+                                    <img src="images/portfolio_web.jpg" alt="Personal Portfolio Website">
+                                </div>
+                                <div class="project-info">
+                                    <h3>Personal Portfolio Website</h3>
+                                    <p>This portfolio website was created from scratch without using templates. It
+                                        demonstrates my ability to design and create basic web pages and work with images.</p>
+                                    <ul>
+                                        <li>HTML5, CSS, and JavaScript</li>
+                                        <li>Integrated SwiperJS for a dynamic project carousel</li>
+                                        <li>Used Formspree for easy form submission functionality</li>
+                                    </ul>
+                                    <a href="https://github.com/dmitri-kramar/dmitrikramar.github.io" class="button" target="_blank">View on GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacts">
+            <div class="container">
+                <h3>Here are the ways we can get in touch:</h3>
+                <div class="contacts-info">
+                    <div class="contacts-cell">
+                        <img src="images/qr.png" alt="QR code">
+                        <div class="row">
+                            <a href="https://github.com/dmitri-kramar" class="button" target="_blank">GitHub</a>
+                            <a href="https://www.linkedin.com/in/dmitri-kramar/" class="button" target="_blank">LinkedIn</a>
+                        </div>
+                    </div>
+                    <form class="contacts-cell" action="https://formspree.io/f/xyzkryqq" method="POST">
+                        <div class="row">
+                            <input type="text" name="name" placeholder="Name" required>
+                            <input type="email" name="email" placeholder="Email" required>
+                        </div>
+                        <textarea name="message" placeholder="Your message" required></textarea>
+                        <button class="button" type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Dmitri Kramar</p>
+        </div>
+    </footer>
+</body>
+</html>
